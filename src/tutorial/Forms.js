@@ -3,9 +3,21 @@ import React, {useState} from 'react'
 function Forms() {
     const [firstName, setFirstName] = useState(" ");
     const [email, setEmail] = useState(" ");
+    const [people,setPeople] = useState([]);
     const handleSubmit =(e)=>{
         e.preventDefault(); //this is used to prevent default browser variable
-        console.log("hello");
+        if(firstName && email){
+            console.log("submit the value");
+            const person={firstName, email};
+            setPeople((people)=>{
+                return [...people, person];
+            });
+            setFirstName('');
+            setEmail('');
+            //console.log(person);
+        }else{
+            console.log("empty value");
+        }
     }
     return (
         <>
