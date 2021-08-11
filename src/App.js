@@ -1,5 +1,6 @@
 import React from "react";
-import UserEffectBasics from "./tutorial/UserEffectBasics";
+import Forms from "./tutorial/Forms";
+//import UserEffectBasics from "./tutorial/UserEffectBasics";
 //import UseStateCounter from "./tutorial/UseStateCounter";
 //import UseStateErrorEx from "./tutorial/useState-objects.js";
 //import UseStateBasic from './tutorial/UseStateBasic';
@@ -8,8 +9,7 @@ import UserEffectBasics from "./tutorial/UserEffectBasics";
 function App() {
   return (
     <div className="container">
-      <h1>Advance React JS</h1>
-      <UserEffectBasics />
+     <Forms />
     </div>
   );
 }
