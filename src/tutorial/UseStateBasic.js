@@ -3,14 +3,17 @@ import React, {useState} from 'react'
 function UseStateBasic() {
 const [day, setday] = useState("Today is a rainy day");
 const handleClick=()=>{
-    return(
-    setday("This is a sunny day")
-    );
+    if(day === "Today is a rainy day"){
+        setday("Today is a sunny day")
+    }else{
+       setday("Today is a rainy day"); 
+    }
+   
 }  
 return (
         <div>
-           
-           <button type="button" className="btn" onClick={handleClick}>{day}</button> 
+           <h1>{day}</h1>
+           <button type="button" className="btn" onClick={handleClick}>Click Me!</button> 
         
             
         </div>
@@ -18,3 +21,6 @@ return (
 }
 
 export default UseStateBasic;
+//rules for using hooks
+//component name must be in upper case
+//must be in the function/component body
