@@ -1,10 +1,11 @@
 import React from 'react'
 
-function Modal() {
+function Modal({modelContent}) {
     return (
-        <div>
+       <> <div>
             
         </div>
+    </>
     )
 }
 
