@@ -16,11 +16,16 @@ promise.catch(error => {
 let c=b;
 console.log(b);
 }
+  const getUsers = () =>{
+      axios.get("http://localhost:4000/users").then(users =>{{
+          console.log(users);
+      }})
+  }
     return (
        <>
        <h2>Random Title</h2>
             <button type="button" className="btn" onClick={handleClick}>post user</button>
-            {/* <button type="button" className="btn" onClick={getUsers}>get user</button> */}
+            <button type="button" className="btn" onClick={getUsers}>get user</button>
         </>
     )
 }
