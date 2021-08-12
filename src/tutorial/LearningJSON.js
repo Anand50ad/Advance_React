@@ -2,16 +2,16 @@ import React from 'react'
 import axios from 'axios'
 function LearningJSON() {
    const handleClick=(b)=>{
-       const promise = axios.post("http://localhost:4000/users",{
-           name: "bruno"}, {headers:{
-               ['content-type']: 'application/json'
+       const promise = axios.post("http://localhost:4000/users",{ //setting the port code
+           name: "bruno"}, {headers:{ //setting up the object we want to create
+               ['content-type']: 'application/json' //setting up the data type
            }}
 )
 promise.then(response => {
-    console.log(response)
+    console.log(response) //used to log response from server
 })
 promise.catch(error => {
-    console.log(error);
+    console.log(error); //used to log error from server
 })  
 let c=b;
 console.log(b);

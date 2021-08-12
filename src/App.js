@@ -1,5 +1,6 @@
 import React from "react";
-import LearningJSON from "./tutorial/LearningJSON";
+import Index from "./tutorial/Reducer/index";
+//import LearningJSON from "./tutorial/LearningJSON";
 //import Forms from "./tutorial/Forms";
 //import LearningJSON from "./tutorial/LearningJSON";
 //import ToDoList from "./tutorial/To-Do-List";
@@ -12,7 +13,8 @@ import LearningJSON from "./tutorial/LearningJSON";
 function App() {
   return (
     <div className="container">
-  <LearningJSON />
+  
+  <Index />
     </div>
   );
 }
