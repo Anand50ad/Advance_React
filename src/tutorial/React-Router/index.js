@@ -24,6 +24,7 @@ function Index() {
 <Route path="/people">
 <People />
 </Route>
+ <Route path="/person/:id" children={<Person />}></Route>
  <Route path="*"> {/*path * denotes all the paths that are not specified by us  and error should be at last beacuse switch takes you to the route encountered first*/}
  
 <Error />
