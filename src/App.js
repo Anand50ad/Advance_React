@@ -1,5 +1,6 @@
 import React from "react";
-import Index from "./tutorial/React-Router/index";
+import PropDrilling from "./tutorial/PropDrilling";
+//import Index from "./tutorial/React-Router/index";
 //import Index from "./tutorial/Reducer/index";
 //import LearningJSON from "./tutorial/LearningJSON";
 //import Forms from "./tutorial/Forms";
@@ -14,7 +15,7 @@ import Index from "./tutorial/React-Router/index";
 function App() {
   return (
     <div className="container">
- <Index />
+ <PropDrilling />
   
     </div>
   );
