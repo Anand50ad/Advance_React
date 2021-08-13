@@ -1,5 +1,6 @@
 import React from "react";
-import PropDrilling from "./tutorial/PropDrilling";
+import ContextAPI from "./tutorial/Context";
+//import PropDrilling from "./tutorial/PropDrilling";
 //import Index from "./tutorial/React-Router/index";
 //import Index from "./tutorial/Reducer/index";
 //import LearningJSON from "./tutorial/LearningJSON";
@@ -15,7 +16,7 @@ import PropDrilling from "./tutorial/PropDrilling";
 function App() {
   return (
     <div className="container">
- <PropDrilling />
+ <ContextAPI />
   
     </div>
   );
